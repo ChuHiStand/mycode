@@ -40,3 +40,4 @@ print("Eighth test - ADD a new value")
 switch["password"] = "qwerty"
 print(switch.keys())
 print(switch.values())
+
