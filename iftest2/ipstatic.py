@@ -4,7 +4,7 @@ ipchk = input("Apply an IP address: ") # this line now prompts the user for inpu
 validatedIpAddress = False
 
 try:
-    ipaddress.IPv4Address(ipchk)
+    ipaddress.ip_address(ipchk)
     validatedIpAddress = True
 
 except ValueError:
