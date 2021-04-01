@@ -37,7 +37,7 @@ def start_questions():
         start_questions()
     play_again()
 
-
+# will run after flowchart is completed and prompts the user to play again or exit
 def play_again():
     user_input = input("\nWould you like to know if you should eat another donut? ").lower()
     if user_input == "yes":
@@ -49,7 +49,7 @@ def play_again():
         print("\nInvalid Selection. Please enter yes or no.")
         play_again()
 
-
+# clears the screen
 def clearScreen():
     os.system('cls')
 
