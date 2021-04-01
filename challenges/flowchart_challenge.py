@@ -25,6 +25,7 @@ def welcome_screen():
 # start questions function will kick off flowchart logic
 def start_questions():
     user_input = input("\n" + donut_flowchart["question"][0]).lower()
+
     if user_input == "yes":
         print("\n" + donut_flowchart["answers"][user_input])
     elif user_input == "no":
@@ -37,11 +38,12 @@ def start_questions():
         start_questions()
     play_again()
 
+
 # will run after flowchart is completed and prompts the user to play again or exit
 def play_again():
     user_input = input("\nWould you like to know if you should eat another donut? ").lower()
     if user_input == "yes":
-        clearScreen()
+        clear_screen()
         welcome_screen()
     elif user_input == "no":
         exit_app()
@@ -49,8 +51,9 @@ def play_again():
         print("\nInvalid Selection. Please enter yes or no.")
         play_again()
 
+
 # clears the screen
-def clearScreen():
+def clear_screen():
     os.system('cls')
 
 
