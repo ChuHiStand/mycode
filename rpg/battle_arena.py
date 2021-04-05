@@ -9,6 +9,8 @@ from character_class import display_class_info
 from character_class import playable_character_list
 from character_class import start_battle
 
+"""Marco Bragado || Battle Arena """
+
 # will start welcome screen
 def start_game():
     print("\nWelcome to the battle arena. Please select what you would like to to do:")
@@ -22,6 +24,7 @@ def start_game():
     else:
         print("Invalid selection. Please enter [1] or [2]")
         start_game()
+
 
 # function that prompts the user to select a player class to play
 def class_selection():
@@ -45,6 +48,7 @@ def class_selection():
         else:
             print("Invalid selection")
             class_selection()
+
 
 # function to start arena scenario
 def start_arena(random_challenger, player_class):
@@ -89,7 +93,7 @@ def clear_screen():
 def exit_app():
     sys.exit("\nThanks for playing!")
 
-# will start the applicaiton
+# will start the application
 def main():
     start_game()
 

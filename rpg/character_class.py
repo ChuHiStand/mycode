@@ -1,4 +1,9 @@
 import random
+
+
+"""Marco Bragado || Battle Arena """
+
+
 # dictionary storing the playable classes in the game
 playable_classes = {
     "warrior": {
@@ -87,10 +92,12 @@ def playable_character_list():
         random_challenger_list.append(each_class)
     return random_challenger_list
 
+
 # helper function to return an ability at a specified index. // currently not being used
 def use_ability(index_of_ability, player_class):
     abilities = playable_classes[player_class]["abilities"][index_of_ability]
     return f"{player_class} used {abilities}"
+
 
 # function that starts the battle scenario between the player and a random opponent
 def start_battle(random_challenger, player_class):
@@ -131,6 +138,7 @@ def start_battle(random_challenger, player_class):
                 return "2"
         else:
             print("Invalid Selection. Please choose between [0] and [1]")
+
 
 # returns the ability of a specific class at the abilities index
 def get_abilities(player_class, index):
