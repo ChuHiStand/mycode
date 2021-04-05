@@ -15,20 +15,20 @@ def main():
 
     # Send HTTPS GET to the API of ICE and Fire character resource
     gotresp = requests.get(AOIF_CHAR + got_charToLookup)
-    pprint.pprint(f"\nNAME: {gotresp['name']}")
+    print(f"\nNAME: {gotresp['name']}")
 
     print("\nHOUSE(S):")
     for family in gotresp["allegiances"]:
         familyresp = requests.get(family).json()
-        pprint.pprint(familyresp["name"])
+        print(familyresp["name"])
 
     print("\nBOOK(S):")
     for book in gotresp["books"]:
         bookresp = requests.get(book).json()
-        pprint.pprint(bookresp["name"])
+        print(bookresp["name"])
     for book in gotresp["povBooks"]:
         bookresp = requests.get(book).json()
-        pprint.pprint(bookresp["name"])
+        print(bookresp["name"])
 
 
 if __name__ == "__main__":
