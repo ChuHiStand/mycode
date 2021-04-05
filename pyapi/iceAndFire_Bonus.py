@@ -14,7 +14,7 @@ def main():
     got_charToLookup = input("Pick a number between 1 and 1000 to return info on a GoT character! ")
 
     # Send HTTPS GET to the API of ICE and Fire character resource
-    gotresp = requests.get(AOIF_CHAR + got_charToLookup)
+    gotresp = requests.get(AOIF_CHAR + got_charToLookup).json()
     print(f"\nNAME: {gotresp['name']}")
 
     print("\nHOUSE(S):")
