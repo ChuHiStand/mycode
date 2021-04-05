@@ -128,6 +128,8 @@ def start_battle(random_challenger, player_class):
                 return "1"
             elif play_again == "2":
                 return "2"
+            else:
+                print("Invalid Selection. Please choose between [0] and [1]")
         elif player_hp <= 0:
             print("You have been defeated :(\n")
             play_again = input("Would you like to play again?\n[1] YES\n[2] NO\nSelection: ")
@@ -136,8 +138,8 @@ def start_battle(random_challenger, player_class):
                 return "1"
             elif play_again == "2":
                 return "2"
-        else:
-            print("Invalid Selection. Please choose between [0] and [1]")
+            else:
+                print("Invalid Selection. Please choose between [0] and [1]")
 
 
 # returns the ability of a specific class at the abilities index

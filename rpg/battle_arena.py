@@ -11,6 +11,7 @@ from character_class import start_battle
 
 """Marco Bragado || Battle Arena """
 
+
 # will start welcome screen
 def start_game():
     print("\nWelcome to the battle arena. Please select what you would like to to do:")
@@ -92,6 +93,7 @@ def clear_screen():
 # helper function to exit the application
 def exit_app():
     sys.exit("\nThanks for playing!")
+
 
 # will start the application
 def main():
