@@ -6,7 +6,8 @@
 import requests
 import pprint
 
-# BONUS OBJECTIVE:  Return the house(s) affiliated with the character looked up, along with a list of books they appear in
+# BONUS OBJECTIVE:  Return the house(s) affiliated with the character looked up, along with a list of books they
+# appear in
 
 AOIF_CHAR = "https://www.anapioficeandfire.com/api/characters/"
 
