@@ -1,2 +1,2 @@
 # mycode
-## python labs
+## python labs and exercises
